@@ -1,0 +1,14 @@
+.navbar-nav > li > a {
+  font-size: large;
+  background: -webkit-linear-gradient(#d283e9, #e09e95);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img-body {
+  filter: invert(100);
+}
+
+h1 {
+  padding-top: 2%;
+}

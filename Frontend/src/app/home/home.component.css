@@ -1,0 +1,20 @@
+.navbar-nav > li > a {
+    font-size: large;
+    background: -webkit-linear-gradient(#D283E9,#E09E95); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img-body {
+    filter:invert(100);
+}
+
+.buttondiv {
+    padding: 30%;
+}
+
+.btn {
+    background: -webkit-linear-gradient(#D283E9,#E09E95);
+    color: white;
+    box-shadow: 3px 5px gray;
+}

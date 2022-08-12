@@ -1,0 +1,141 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home">
+      <img
+        class="img-body"
+        src="assets/images/SuperCalc-removebg-preview.png"
+        alt="Computer Man"
+        style="width: 90px; height: 90px"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<main class="px-md-4">
+  <div
+    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+  >
+    <h1 class="h2">{{ this.userData.username }}'s Update Values</h1>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" routerLink="/dashboard">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/update">Update</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/stats">Statistics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Settings</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem">
+            <div class="card-body p-5 text-center">
+              <div class="mb-md-5 mt-md-4 pb-5">
+                <h2 class="fw-bold mb-2 text-uppercase">Update Info</h2>
+                <p class="text-white-50 mb-5">
+                  Here are some values you can update. Once updated click save
+                  to login and see changes.
+                </p>
+                <div class="form-outline form-white mb-4">
+                  <div class="input-group" style="padding: 5%">
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Years"
+                      id="years"
+                      [(ngModel)]="years"
+                    />
+                    <button
+                      class="btn bg-light"
+                      type="submit"
+                      (click)="updateYears()"
+                    >
+                      Update
+                    </button>
+                  </div>
+
+                  <div class="input-group" style="padding: 5%">
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Investment Growth"
+                      id="investmentGrowth"
+                      [(ngModel)]="investmentGrowth"
+                    />
+                    <button
+                      class="btn bg-light"
+                      type="submit"
+                      (click)="updateInvestmentGrowth()"
+                    >
+                      Update
+                    </button>
+                  </div>
+
+                  <div class="input-group" style="padding: 5%">
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Inflation Depreciation"
+                      id="inflationDepreciation"
+                      [(ngModel)]="inflationDepreciation"
+                    />
+                    <button
+                      class="btn bg-light"
+                      type="submit"
+                      (click)="updateInflationDepreciation()"
+                    >
+                      Update
+                    </button>
+                  </div>
+
+                  <div class="input-group" style="padding: 5%">
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Debt Appreciation"
+                      id="debtAppreciation"
+                      [(ngModel)]="debtAppreciation"
+                    />
+                    <button
+                      class="btn bg-light"
+                      type="submit"
+                      (click)="updatedebtAppreciation()"
+                    >
+                      Update
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="btn btn-outline-light btn-lg px-5"
+                type="submit"
+                routerLink="/signIn"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,92 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home">
+      <img
+        class="img-body"
+        src="assets/images/SuperCalc-removebg-preview.png"
+        alt="Computer Man"
+        style="width: 90px; height: 90px"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<main class="px-md-4">
+  <div
+    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+  >
+    <h1 class="h2">{{ this.userData.username }}'s Dashboard</h1>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/dashboard"
+          >Home</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/update">Update</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/stats">Statistics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Settings</a>
+      </li>
+    </ul>
+  </div>
+
+  <section style="padding: 5%">
+    <div id="container2"></div>
+  </section>
+  <div class="container" style="padding-bottom: 5%">
+    <div class="row g-2">
+      <div class="col-6">
+        <div class="p-3 border bg-dark text-white">
+          Investments
+          <h1>${{ userData.investments }}</h1>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border bg-dark text-white">
+          Total Assets
+          <h1>${{ userData.assets }}</h1>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border bg-dark text-white">
+          Loan Debt
+          <h1>${{ userData.debt }}</h1>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border bg-dark text-white">
+          Investment Growth
+          <h1>${{ userData.investmentGrowth }}</h1>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border bg-dark text-white">
+          Inflation Depreciation
+          <h1>${{ userData.inflationDepreciation }}</h1>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border bg-dark text-white">
+          Debt Appreciation
+          <h1>${{ userData.debtAppreciation }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  body, html {
+    background-image: white;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat:space;
+  }
+
+  body {
+        align-self: center;
+        text-align: center;
+  }
